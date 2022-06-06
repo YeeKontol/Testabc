@@ -16,11 +16,11 @@ print("""\033[96m\n
 
 print("TOOLS FOR UDP SA-MP SERVER")
 
-ip = str(input(" IP : "))
-port = int(input(" PORT : "))
-choice = str(input(" ARE YOU READY (y/n) : "))
-times = int(input(" CONNECTIONS : "))
-threads = int(input("THREADS : "))
+ip = str(input("➣IP : "))
+port = int(input("➣PORT : "))
+choice = str(input("➣ARE YOU READY (y/n) : "))
+times = int(input("➣CONNECTIONS : "))
+threads = int(input("➣THREADS : "))
 
 os.system("clear")
 def run():
