@@ -7,6 +7,10 @@ import struct
 import codecs
 import time
 
+ip = sys.argv[1]
+port = sys.argv[2]
+orgip =ip
+
 os.system("clear")
 print("""\033[96m\n
 ██╗  ██╗███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗ 
